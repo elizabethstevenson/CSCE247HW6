@@ -1,5 +1,5 @@
 /**
- * @author Elizabeth Stevenson
+ * @author Elizabeth Stevenson, Victoria Condos
  * Purpose: a document is being saved
  */
 public class SpellCommand implements Command {

@@ -1,5 +1,5 @@
 /**
- * @author Elizabeth Stevenson
+ * @author Elizabeth Stevenson, Victoria Condos
  * Purpose: a document is loaded into view
  */
 public class LoadCommand implements Command {
