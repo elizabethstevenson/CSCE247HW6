@@ -13,7 +13,7 @@ public class InputHandler {
 		commands.put("spell", document.spell());
 		commands.put("print", document.print());
 	}
-	public void InputEntered(String data) {
+	public void InputEntered(String data) { //TODO- idk when data is used
 		commands.get("load");
 		commands.get("save");
 		commands.get("spell");
