@@ -5,15 +5,15 @@
  */
 import java.util.HashMap;
 public class InputHandler {
-	private HashMap<String, Command> commands = new HashMap<String, Command>();
+	private HashMap<String, Command> commands = new HashMap<>();
 	
-	public void InputHandler(Document document) {
-		commands.put("load", document.load()); //TODO- I don't really understand hash maps -v
-		commands.put("save", document.save());
-		commands.put("spell", document.spell());
-		commands.put("print", document.print());
+	public InputHandler(Document document) {
+		commands.put("load", new LoadCommand(document)); //TODO- I don't really understand hash maps -v
+		commands.put("save", new SaveCommand(document));
+		commands.put("spell", new SpellCommand(document));
+		commands.put("print", new PrintCommand(document));
 	}
-	public void InputEntered(String data) { //TODO- idk when data is used
+	public void inputEntered(String data) { //TODO- idk when data is used
 		commands.get("load");
 		commands.get("save");
 		commands.get("spell");
