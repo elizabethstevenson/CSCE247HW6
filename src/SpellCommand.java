@@ -1,6 +1,6 @@
 /**
- * @author Elizabeth Stevenson, Victoria Condos
- * Purpose: a document is being saved
+ * @author Elizabeth Stevenson, Victoria Condos, Brett Logeais
+ * Purpose: a document is being checked for spelling
  */
 public class SpellCommand implements Command {
 	private Document doc;

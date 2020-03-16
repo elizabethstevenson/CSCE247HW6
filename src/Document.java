@@ -1,5 +1,5 @@
 /**
- * @author Elizabeth Stevenson, Victoria Condos
+ * @author Elizabeth Stevenson, Victoria Condos, Brett Logeais
  * Purpose: this is a document where users can load, spell, save, and print
  */
 public class Document {

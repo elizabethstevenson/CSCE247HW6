@@ -1,15 +1,15 @@
 /**
  * @author Elizabeth Stevenson, Victoria Condos, Brett Logeais
- * Purpose: a document is loaded into view
+ * Purpose: a document is being saved
  */
-public class LoadCommand implements Command {
+public class SaveCommand implements Command {
 	private Document doc;
 	
-	public LoadCommand(Document doc) {
+	public SaveCommand(Document doc) {
 		this.doc = doc;
 	}
 	
 	public void execute() {
-		doc.load();
+		doc.save();
 	}
 }

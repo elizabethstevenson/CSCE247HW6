@@ -1,7 +1,6 @@
 /**
- * 
- * @author Victoria Condos, Elizabeth Stevenson
- * Purpose: Holds a hashmpa for commands and corresponding input keys
+ * @author Victoria Condos, Elizabeth Stevenson, Brett Logeais
+ * Purpose: Holds a hashmap for commands and corresponding input keys
  */
 import java.util.HashMap;
 public class InputHandler {
@@ -13,10 +12,13 @@ public class InputHandler {
 		commands.put("spell", new SpellCommand(document));
 		commands.put("print", new PrintCommand(document));
 	}
+	
 	public void inputEntered(String data) { //TODO- idk when data is used
-		commands.get("load");
-		commands.get("save");
-		commands.get("spell");
-		commands.get("print");
+		Command command = commands.get(data);
+		if (command == null) {
+			System.out.println("Sorry, we don't recognize that command");
+		} else {
+			command.execute();
+		}
 	}
 }
