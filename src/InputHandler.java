@@ -1,6 +1,9 @@
 /**
- * @author Victoria Condos, Elizabeth Stevenson, Brett Logeais
+ * @author Victoria Condos, Elizabeth Stevenson, Brett Logeais, Elijah Dawkins
  * Purpose: Holds a hashmap for commands and corresponding input keys
+ * @param Hashmap - Returns a command associated with a given string when used.
+ * @param String - Label for specific commands.
+ * @param Command - Action to be taken based on String input within the Hashmap.
  */
 import java.util.HashMap;
 public class InputHandler {

@@ -1,6 +1,8 @@
 /**
- * @author Elizabeth Stevenson, Victoria Condos, Brett Logeais
+ * @author Elizabeth Stevenson, Victoria Condos, Brett Logeais, Elijah Dawkins
  * Purpose: a document is being saved
+ * @param Document - Document file to be saved.
+ * 
  */
 public class SaveCommand implements Command {
 	private Document doc;

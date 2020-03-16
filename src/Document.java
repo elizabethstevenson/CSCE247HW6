@@ -1,6 +1,7 @@
 /**
- * @author Elizabeth Stevenson, Victoria Condos, Brett Logeais
+ * @author Elizabeth Stevenson, Victoria Condos, Brett Logeais, Elijah Dawkins
  * Purpose: this is a document where users can load, spell, save, and print
+ * @param name - The name of the document being created.
  */
 public class Document {
 	public String name;

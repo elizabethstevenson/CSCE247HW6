@@ -1,6 +1,7 @@
 /**
- * @author Elizabeth Stevenson, Victoria Condos, Brett Logeais
+ * @author Elizabeth Stevenson, Victoria Condos, Brett Logeais, Elijah Dawkins
  * Purpose: a document is being checked for spelling
+ * @param Document - Document file to be manipulated.
  */
 public class SpellCommand implements Command {
 	private Document doc;

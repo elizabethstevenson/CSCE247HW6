@@ -1,5 +1,5 @@
 /**
- * @author Elizabeth Stevenson, Victoria Condos, Brett Logeais
+ * @author Elizabeth Stevenson, Victoria Condos, Brett Logeais, Elijah Dawkins
  * Purpose: holds the common execute command
  */
 public interface Command {
