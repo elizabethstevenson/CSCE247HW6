@@ -1,15 +1,21 @@
 /**
  * @author Elizabeth Stevenson, Victoria Condos, Brett Logeais, Elijah Dawkins
  * Purpose: a document is being checked for spelling
- * @param Document - Document file to be manipulated.
  */
 public class SpellCommand implements Command {
 	private Document doc;
 	
+	/**
+	 * Purpose: creates a document to spell check
+	 * @param doc: document to speck check
+	 */
 	public SpellCommand(Document doc) {
 		this.doc = doc;
 	}
 	
+	/**
+	 * Purpose: execute the spell command
+	 */
 	public void execute() {
 		doc.spell();
 	}

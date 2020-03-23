@@ -1,14 +1,15 @@
 /**
  * @author Victoria Condos, Elizabeth Stevenson, Brett Logeais, Elijah Dawkins
  * Purpose: Holds a hashmap for commands and corresponding input keys
- * @param Hashmap - Returns a command associated with a given string when used.
- * @param String - Label for specific commands.
- * @param Command - Action to be taken based on String input within the Hashmap.
  */
 import java.util.HashMap;
 public class InputHandler {
 	private HashMap<String, Command> commands = new HashMap<>();
 	
+	/**
+	 * Purpose: associates each command with the string
+	 * @param document: commands are done to a document
+	 */
 	public InputHandler(Document document) {
 		commands.put("load", new LoadCommand(document));
 		commands.put("save", new SaveCommand(document));
@@ -16,6 +17,10 @@ public class InputHandler {
 		commands.put("print", new PrintCommand(document));
 	}
 	
+	/**
+	 * Purpose: to recognize the inputted command
+	 * @param data: this is the what the user inputted for the command
+	 */
 	public void inputEntered(String data) {
 		Command command = commands.get(data);
 		if (command == null) {
