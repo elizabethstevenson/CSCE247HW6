@@ -9,6 +9,7 @@ public class InputHandler {
 	/**
 	 * Purpose: associates each command with the string
 	 * @param document: commands are done to a document
+	 * @return a load, save, spell, and print command for each document.
 	 */
 	public InputHandler(Document document) {
 		commands.put("load", new LoadCommand(document));
@@ -20,6 +21,7 @@ public class InputHandler {
 	/**
 	 * Purpose: to recognize the inputted command
 	 * @param data: this is the what the user inputted for the command
+	 * @return command execution. 
 	 */
 	public void inputEntered(String data) {
 		Command command = commands.get(data);

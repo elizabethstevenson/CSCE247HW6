@@ -15,6 +15,7 @@ public class LoadCommand implements Command {
 	
 	/**
 	 * Purpose: execute the load command
+	 * @return load command
 	 */
 	public void execute() {
 		doc.load();

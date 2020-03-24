@@ -8,6 +8,7 @@ public class PrintCommand implements Command {
 	/**
 	 * Purpose: creates a document to print
 	 * @param doc: document to print
+	 * @return current document
 	 */
 	public PrintCommand(Document doc) {
 		this.doc = doc;
@@ -15,6 +16,7 @@ public class PrintCommand implements Command {
 	
 	/**
 	 * Purpose: execute the print command
+	 * @return print command
 	 */
 	public void execute() {
 		doc.print();
